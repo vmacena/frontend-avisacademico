@@ -1,0 +1,239 @@
+/* Estilos gerais */
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+p.autor {
+    font-size: 20px;
+}
+
+.envoltorio {
+	width: 100%;
+	height: 100%;
+}
+
+main {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	display: flex;
+}
+
+.barra_vertical {
+	position: relative;
+	height: 100%;
+}
+
+.barra_vertical .fundo_opaco {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 25px;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.barra_vertical .menu_vertical {
+	width: 250px;
+	background: var(--cor--primaria--background--login);
+	height: 100%;
+	position: relative;
+}
+
+.barra_vertical .menu_vertical .informacoes_perfil {
+	text-align: center;
+	padding: 50px 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.barra_vertical .menu_vertical .informacoes_perfil img {
+	width: 75px;
+}
+
+.barra_vertical .menu_vertical .informacoes_perfil .titulo {
+	font-size: 20px;
+	letter-spacing: 2px;
+	color: #c99c33;
+	font-weight: 700;
+}
+
+.barra_vertical .menu_vertical .informacoes_perfil .subtitulo {
+	margin: 10px 0;
+	font-size: 16px;
+	color: #fff;
+}
+
+.barra_vertical .menu_vertical .menu {
+	padding-left: 25px;
+}
+
+.barra_vertical .menu_vertical .menu li a {
+	display: block;
+	padding: 15px;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 2px;
+	border-top-left-radius: 25px;
+	margin-bottom: 1px;
+}
+
+.barra_vertical .menu_vertical .menu li a .icone {
+	color: #c99c33;
+	width: 25px;
+	display: inline-block;
+}
+
+.barra_vertical .menu_vertical .menu li a:hover {
+	background: #fff;
+	color: var(--cor--primaria--background--login);
+}
+
+.barra_vertical .menu_vertical .social {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	bottom: 50px;
+}
+
+.barra_vertical .menu_vertical .social li a {
+	width: 50px;
+	height: 50px;
+	color: #fff;
+	border: 1px solid #fff;
+	display: inline-block;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 50px;
+	margin: 0 10px;
+}
+
+.barra_vertical .menu_vertical .social li a:hover {
+	color: #c99c33;
+	background: #fff;
+}
+
+.container_principal {
+	width: calc(100% - 250px);
+}
+
+.container_principal .barra_superior {
+	height: 60px;
+	background: var(--cor--primaria--background--login);
+	padding: 15px 25px;
+	display: flex;
+	align-items: center;
+}
+
+.barra_superior .hamburguer {
+	color: #fff;
+	font-size: 24px;
+	cursor: pointer;
+	display: none;
+	margin-right: 25px;
+}
+
+.barra_superior .logo {
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #c99c33;
+	display: flex;
+}
+
+.barra_superior .logo p {
+	color: #fff;
+}
+
+.container_principal .container {
+	padding: 25px;
+	height: calc(100% - 60px);
+	overflow: auto;
+}
+
+.container_principal .container .item {
+	background: #e3f2f1;
+	padding: 50px;
+	margin-bottom: 25px;
+}
+
+.botao_sair {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	margin: 10px;
+}
+
+.botao_sair a {
+	color: var(--cor--botâo);
+	background-color: var(--cor--botao--login--cadastro);
+	padding: 5px 10px;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.botao_sair a:hover {
+	background-color: var(--cor--botao--login--cadastro--hover);
+	color: var(--cor--botâo);
+}
+
+@media (max-width: 768px) {
+	.barra_superior .hamburguer {
+		display: inline-block;
+	}
+
+	main {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		visibility: hidden;
+	}
+
+	.barra_vertical {
+		position: absolute;
+		top: 0;
+		left: -100%;
+		transition: left 0.2s linear;
+	}
+
+	.envoltorio.active main {
+		visibility: visible;
+	}
+
+	.envoltorio.active .barra_vertical {
+		left: 0;
+		transition: left 0.2s linear;
+	}
+}
+
+.suporte_imagem {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 150px;
+	width: 150px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.suporte_imagem img {
+	border-radius: 50%;
+	width: 100% !important;
+	background-size: cover;
+}
