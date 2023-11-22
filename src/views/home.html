@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="icon" type="image/png" href="./../../public/assets/icons/favicon.png" />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./../../public/styles/home/home.css">
+    <link rel="stylesheet" href="./../../public/styles/home/forum/tweets.css">
+    <link rel="stylesheet" href="./../../public/styles/gerais/componentes.css">
+    <link rel="stylesheet" href="./../../public/styles/gerais/utils.css">
+
+    <!-- Scripts -->
+    <script src="./../../public/scripts/home/home.js"></script>
+    <script src="./../../public/scripts/gerais/mensagens.js"></script>
+    <script src="./../../public/scripts/gerais/variaveis_globais.js"></script>
+    <script src="./../../public/scripts/gerais/requisicoes.js"></script>
+    <script src="./../../public/scripts/gerais/gerais.js"></script>
+    <script src="./../../public/scripts/gerais/componentes.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="barra_vertical">
+            <div class="fundo_opaco"></div>
+            <div class="menu_vertical">
+                <div class="informacoes_perfil">
+                    <div class="suporte_imagem">
+                        <img id="fotoUsuarioLogado" src="./../../public/assets/padrao.jpg" alt="foto_perfil">
+                    </div>
+                    <p id="nomeUsuarioLogado" class="subtitulo">usuário</p>
+                </div>
+                <ul class="menu">
+                    <li><a href="perfil.html">
+                            <span class="icone"></span>
+                            <span class="texto">Perfil</span>
+                        </a></li>
+                    <li><a href="calendario.html" class="ativo">
+                            <span class="icone"></span>
+                            <span class="texto">Calendário</span>
+                        </a></li>
+                    <li><a href="home.html">
+                            <span class="icone"></span>
+                            <span class="texto">Fórum</span>
+                        </a></li>
+                    <li><a href="quemsomoms.html">
+                            <span class="icone"></span>
+                            <span class="texto">Quem somos?</span>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container_principal">
+            <div class="barra_superior">
+                <div class="logo">
+                    <a class="logo" href="home.html"><h2>Avis</h2></a>
+                    <a href="home.html"><p>Acadêmico</p></a>
+                </div>
+                <div class="botao_sair" onclick="deslogar()">
+                    <a href="./../../index.html">Sair</a>
+                </div>
+            </div>
+            <div class="conteudo">
+                <div class="caixa_tweet">
+                    <textarea id="texto-tweet" placeholder="Escreva aqui..."></textarea>
+                    <button id="botao-tweet">Publicar</button>
+                </div>
+                <div class="linha_tempo">
+                    <!-- Aqui você exibiria os tweets da linha do tempo -->
+                </div>
+                <script src="./../../public/scripts/home/forum/posts.js"></script>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

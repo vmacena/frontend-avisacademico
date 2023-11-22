@@ -1,0 +1,60 @@
+.tweet {
+  background-color: var(--cor--primaria--background--login);
+  border: 1px solid var(--cor--botâo);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin: 0 auto;
+  /* Centralizar horizontalmente */
+  max-width: 500px;
+  /* Definir uma largura máxima */
+  margin-top: 3px;
+  color: var(--cor--botâo);
+}
+
+.caixa_tweet {
+  background-color: var(--cor--primaria--background--login);
+  border: 1px solid var(--cor--botâo);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 auto;
+  /* Centralizar horizontalmente */
+  max-width: 500px;
+  /* Definir uma largura máxima */
+  margin-top: 2px;
+  color: var(--cor--botâo);
+}
+
+textarea#texto-tweet {
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  min-height: 50px;
+  color: var(--cor--botâo);
+}
+
+button#botao-tweet {
+  background-color: var(--cor--botâo);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Estilos para o nome do autor */
+.autor {
+  font-weight: bold;
+}
+
+.horario {
+  font-size: 12px;
+  /* Tamanho da fonte desejado */
+}
+
+textarea {
+  background-color: var(--cor--primaria--background--login);
+  
+}

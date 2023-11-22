@@ -1,0 +1,1 @@
+const HOST = "https://backend-academico.000webhostapp.com";

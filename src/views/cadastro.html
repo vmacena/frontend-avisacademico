@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Cadastrar</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="./../../public/assets/icons/favicon.png" />
+	<link rel="stylesheet" type="text/css" href="./../../public/styles/gerais/utils.css">
+	<link rel="stylesheet" type="text/css" href="./../../public/styles/autenticacao/autenticacao.css">
+
+	<!-- Gerais -->
+	<!-- CSS -->
+	<link rel="stylesheet" href="./../../public/styles/gerais/componentes.css">
+
+	<!-- Scripts -->
+	<script src="./../../public/scripts/gerais/mensagens.js"></script>
+	<script src="./../../public/scripts/gerais/variaveis_globais.js"></script>
+	<script src="./../../public/scripts/gerais/requisicoes.js"></script>
+	<script src="./../../public/scripts/gerais/gerais.js"></script>
+	<script src="./../../public/scripts/gerais/componentes.js"></script>
+</head>
+
+<body>
+
+	<div class="envelopar-login">
+		<div class="imagem-login">
+			<img src="./../../public/assets/icons/favicon.png" alt="IMG">
+		</div>
+
+		<form class="formulario-login validar-formulario" method="post" action="">
+			<span class="titulo-formulario-login">
+				<span>Avis</span><span class="vermelho">Acadêmico</span>
+			</span>
+
+			<div class="envelopar-input validar-input" data-validate="Nome inválido">
+				<input class="entrada" type="text" name="iNome" placeholder="Insira seu nome">
+				<span class="iconeEntrada">
+					<img src="./../../public/assets/icons/envelope.png" alt="Envelope preto">
+				</span>
+			</div>
+
+			<div class="envelopar-input validar-input" data-validate="Email inválido">
+				<input class="entrada" type="text" name="iEmail" placeholder="Insira seu Email">
+				<span class="iconeEntrada">
+					<img src="./../../public/assets/icons/envelope.png" alt="Envelope preto">
+				</span>
+			</div>
+
+			<div class="envelopar-input">
+				<input class="entrada" type="file" id="foto" name="iFoto" accept="image/*" placeholder="Insira sua foto">
+				<label for="foto"><p>Selecionar</p></label>
+				<span class="iconeEntrada">
+					<img src="./../../public/assets/icons/envelope.png" alt="Envelope preto">
+				</span>
+			</div>
+
+			<div class="envelopar-input validar-input" data-validate="Senha inválida">
+				<input class="entrada" type="password" name="iSenha" placeholder="Insira sua senha">
+				<span class="iconeEntrada">
+					<img src="./../../public/assets/icons/cadeado-trancado.png" alt="Cadeado trancado preto">
+				</span>
+			</div>
+
+			<div class="envelopar-botoes-formulario-login">
+				<button class="botao-formulario-login" name="entrar" type="submit">
+					Cadastrar
+				</button>
+			</div>
+
+			<div class="link-registro">
+				<br>
+				<br>
+				<a href="./../../index.html">
+					Já tem conta. Entrar
+					<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+				</a>
+				<br>
+				<br>
+				<br>
+				<footer>
+					<p>Criado por Vinicius Macena, Mauricio Brito, Vinicius Oliveira e Gabriel Manhani</p>
+				</footer>
+			</div>
+		</form>
+	</div>
+
+	<script src="./../../public/scripts/gerais/validacoes.js"></script>
+	<script src="./../../public/scripts/autenticacao/cadastro.js"></script>
+
+</body>
+
+</html>

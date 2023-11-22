@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Entrar</title>
+	<link rel="icon" type="image/png" href="./public/assets/icons/favicon.png" />
+	<link rel="stylesheet" href="./public/styles/gerais/utils.css">
+	<link rel="stylesheet" href="./public/styles/autenticacao/autenticacao.css">
+	<link rel="stylesheet" href="./public/styles/login/utils.css">
+
+	<!-- Gerais -->
+	<!-- CSS -->
+	<link rel="stylesheet" href="./public/styles/gerais/componentes.css">
+
+	<!-- Scripts -->
+	<script src="./public/scripts/gerais/mensagens.js"></script>
+	<script src="./public/scripts/gerais/variaveis_globais.js"></script>
+	<script src="./public/scripts/gerais/requisicoes.js"></script>
+	<script src="./public/scripts/gerais/gerais.js"></script>
+	<script src="./public/scripts/gerais/componentes.js"></script>
+</head>
+
+<body>
+
+	<div class="envelopar-login">
+		<div class="imagem-login">
+			<img src="./public/assets/icons/favicon.png" alt="IMG">
+		</div>
+
+		<form class="formulario-login validar-formulario" method="post" action="">
+			<span class="titulo-formulario-login">
+				<span>Avis</span><span class="vermelho">Acadêmico</span>
+			</span>
+
+			<div class="envelopar-input validar-input" data-validate="Email inválido">
+				<input class="entrada" type="text" id="email" name="email" placeholder="Insira seu Email">
+				<span class="iconeEntrada">
+					<img src="./public/assets/icons/envelope.png" alt="Envelope preto">
+				</span>
+			</div>
+
+			<div class="envelopar-input validar-input" data-validate="Senha inválida">
+				<input class="entrada" type="password" id="senha" name="pass" placeholder="Insira sua senha">
+				<span class="iconeEntrada">
+					<img src="./public/assets/icons/cadeado-trancado.png" alt="Cadeado trancado preto">
+				</span>
+			</div>
+
+			<div class="envelopar-botoes-formulario-login">
+				<button class="botao-formulario-login" name="entrar" type="submit">
+					Entrar
+				</button>
+			</div>
+
+			<div class="link-registro">
+				<br>
+				<br>
+				<a href="./src/views/cadastro.html">
+					Crie sua conta
+					<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+				</a>
+				<br>
+				<br>
+				<br>
+				<footer>
+					<p>Criado por Vinicius Macena, Mauricio Brito, Vinicius Oliveira e Gabriel Manhani</p>
+				</footer>
+			</div>
+		</form>
+	</div>
+
+	<script src="./public/scripts/gerais/validacoes.js"></script>
+	<script src="./public/scripts/autenticacao/login.js"></script>
+
+</body>
+
+</html>

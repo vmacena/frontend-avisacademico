@@ -1,0 +1,22 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    background-color: var(--cor--primaria--background--login);
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: var(--cor--primaria--background--login);
+    text-align: center;
+    font-size: 15px;
+    border: 1px solid var(--cor--botâo);
+    color: #fff;
+  }
+
+  .icon-pessoa img {
+    width: 300px;
+    height: 300px;
+    margin-top: 1px;
+  }
